@@ -1,7 +1,7 @@
 """
 My practice for if then else loop
 """
-import os,sys,time,pytest
+import os,sys,time
 
 class compare():
     def check_num_greater_than_four(self, num):
