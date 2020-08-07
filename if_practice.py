@@ -218,9 +218,38 @@ def fn(a,b):
     b[0]=100
 
 
+a = [17, 82, 35]
+b = [8, 95, 55]
+
+result= []
+
+def compareTriplets(a, b):
+    total_a = 0
+    total_b = 0
+    for i in range(len(a)):
+        if a[i] > b[i]:
+            total_a = total_a + 1
+        elif a[i] < b[i]:
+            total_b = total_b + 1
+
+    return (total_a, total_b)
+
+ar = [1,2,3, 4,5]
+
+def aVeryBigSum(ar):
+    sum = 0
+
+    for i in ar:
+        sum += i
+
+    return sum
+
+
 #---START OF SCRIPT
 if __name__=='__main__':
 
 
-  true = 30
-  print(true)
+    print(a)
+    print(b)
+    print(compareTriplets(a, b))
+    print(aVeryBigSum(ar))
